@@ -1,4 +1,4 @@
-# Linux bash commands
+# RVM + RUBY / NVM + NODE Autoinstaller
 
 Автоматическая установка RVM окружения для языка Ruby (v3.1.2) и установка NVM окружения для Nodejs (v18) + Yarn.  
 Дополнительно ставиться Ruby on Rails v6.1.7 и ~7 версии.  

@@ -7,12 +7,10 @@ sudo apt install curl gnupg2 git sqlite3 -y
 # Установка RVM (окружение для уравление RUBY)
 gpg2 --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3 7D2BAF1CF37B13E2069D6956105BD0E739499BDB
 \curl -sSL https://get.rvm.io | bash -s stable
-source ~/.bashrc
 source ~/.rvm/scripts/rvm
 
 # Устанока NVM (окружение для уравление NODE)
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.2/install.sh | bash
-source ~/.bashrc
 source ~/.nvm/nvm.sh
 
 # Установка Node v18

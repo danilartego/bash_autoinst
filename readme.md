@@ -11,7 +11,10 @@ git clone https://github.com/danilartego/autoinst.git
 nano ./autoinst/rvm_nvm.sh   
 
 # Запуск скрипта через Bash.
-bash ./autoinst/rvm_nvm.sh  
+bash ./autoinst/rvm_nvm.sh
+
+# Перезапустить bash.
+/bin/bash --login
 ```
 
 ---

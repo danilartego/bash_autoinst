@@ -35,3 +35,5 @@ gem install rubocop
 # Подготовка нового приложения RAILS APP
 rails _6.1.7_ new ~/rails/new_webapp6
 rails new ~/rails/new_webapp7
+
+/bin/bash --login

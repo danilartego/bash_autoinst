@@ -1,28 +1,37 @@
-#!/bin/sh
+#!/bin/bash
 
+# Обновление программ и установка
 sudo apt update && sudo apt upgrade -y
 sudo apt install curl gnupg2 git sqlite3 -y
 
+# Установка RVM (окружение для уравление RUBY)
 gpg2 --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3 7D2BAF1CF37B13E2069D6956105BD0E739499BDB
 \curl -sSL https://get.rvm.io | bash -s stable
-. ~/.bashrc
-. ~/.rvm/scripts/rvm
-# source ~/.bashrc
+source ~/.bashrc
+source ~/.rvm/scripts/rvm
 
+# Устанока NVM (окружение для уравление NODE)
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.2/install.sh | bash
-. ~/.bashrc
-. ~/.nvm/nvm.sh
-# source ~/.bashrc
+source ~/.bashrc
+source ~/.nvm/nvm.sh
 
+# Установка Node v18
 nvm install 18
-npm install yarn --global
+source ~/.bashrc
 
+# Установка YARN
+npm install yarn --global
+source ~/.bashrc
+
+# Установка RUBY v3.1.2
 rvm install 3.1.2
 
+# Установка RAILS и других Джемов
 gem install rails
 gem install rails -v 6.1.7
 gem install solargraph
 gem install rubocop
 
+# Подготовка нового приложения RAILS APP
 rails _6.1.7_ new ~/rails/new_webapp6
 rails new ~/rails/new_webapp7

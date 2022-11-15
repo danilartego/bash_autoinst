@@ -1,11 +1,16 @@
 # Linux bash commands
 
-Автоматическая установка RVM окружения для языка Ruby и установка NVM окружения для Nodejs  
-Дополнительно ставиться Ruby on Rails 6 и 7 версии  
-
+Автоматическая установка RVM окружения для языка Ruby и установка NVM окружения для Nodejs.  
+Дополнительно ставиться Ruby on Rails 6 и 7 версии.  
+Проверен на WSL2, чистой Ubuntu 22.04.  
 ```
+# Копируем скрипт из Github.
 git clone https://github.com/danilartego/autoinst.git 
+
+# Смотрим скрипт, вносим правки, если нужно.
 nano ./autoinst/rvm_nvm.sh   
+
+# Запуск скрипта через Bash.
 bash ./autoinst/rvm_nvm.sh  
 ```
 

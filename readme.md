@@ -7,3 +7,7 @@
 adduser <username>
 usermod -aG sudo <usrname>
 sudo killall -u <username> && sudo userdel <usename> -r -f
+
+nvm deactivate
+nvm unlink
+nvm uninstall <ver>

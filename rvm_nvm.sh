@@ -9,8 +9,8 @@ gpg2 --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3 7D2BAF1CF37B13E2069D69
 source ~/.bashrc
 
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.2/install.sh | bash
-. ~/.nvm/nvm.sh
-source ~/.nvm/nvm.sh
+. ~/.bashrc
+source ~/.bashrc
 
 nvm install 18
 npm install yarn --global

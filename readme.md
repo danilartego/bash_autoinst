@@ -4,7 +4,7 @@
 Дополнительно ставиться Ruby on Rails 6 и 7 версии  
 
 ```
-git clone https:\\github.com\danilartego\autoinst.git  
+git clone https://github.com/danilartego/autoinst.git  
 bash ./autoinst/rvm_nvm.sh  
 ```
 

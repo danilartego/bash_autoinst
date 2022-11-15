@@ -1,8 +1,9 @@
 # Linux bash commands
 
-`git clone https:\\github.com\danilartego\autoinst.git`
-
-`bash ./autoinst/rvm_nvm.sh`
+```
+git clone https:\\github.com\danilartego\autoinst.git  
+bash ./autoinst/rvm_nvm.sh  
+```
 
 ---
 adduser _username_  

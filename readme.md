@@ -38,3 +38,9 @@ nvm deactivate
 nvm unlink  
 nvm uninstall _ver_  
 ```
+
+### Git прописать почту и имя
+```
+git config --global user.email _"user@domain.com"_
+git config --global user.name _"username"_
+```

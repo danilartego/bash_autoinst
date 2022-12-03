@@ -18,7 +18,7 @@ bash ./autoinst/rvm_nvm.sh
 ```
 
 ---
-# Linux user add & delete
+### Linux user add & delete
 ```
 # Добавить пользовтеля
 adduser _username_ 
@@ -32,7 +32,7 @@ sudo killall -u _username_ && sudo userdel _usename_ -r -f
 # -r удалить домашний каталог и почтовый ящик  
 
 ```
-# Удалить NVM окружение для Nodejs
+### Удалить NVM окружение для Nodejs
 ```
 nvm deactivate  
 nvm unlink  

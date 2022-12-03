@@ -25,13 +25,13 @@ source ~/.bashrc
 rvm install 3.1.2
 
 # Установка RAILS и других Джемов
-gem install rails
-gem install rails -v 6.1.7
-gem install solargraph
-gem install rubocop
+# gem install rails
+# gem install rails -v 6.1.7
+# gem install solargraph
+# gem install rubocop
 
 # Подготовка нового приложения RAILS APP
-rails _6.1.7_ new ~/rails/new_webapp6
-rails new ~/rails/new_webapp7
+# rails _6.1.7_ new ~/rails/new_webapp6
+# rails new ~/rails/new_webapp7
 
 /bin/bash --login

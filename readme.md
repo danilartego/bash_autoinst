@@ -18,14 +18,23 @@ bash ./autoinst/rvm_nvm.sh
 ```
 
 ---
-adduser _username_  
-usermod -aG sudo _usrname_  
-sudo killall -u _username_ && sudo userdel _usename_ -r -f  
--f удалять файлы в домашнем каталоге, даже если они не принадлежат пользователю  
--r удалить домашний каталог и почтовый ящик  
+# Linux user add & delete
+```
+# Добавить пользовтеля
+adduser _username_ 
 
+# Добавить пользователя в категорию _sudo_
+usermod -aG sudo _usrname_
+
+# Удилить пользователя
+sudo killall -u _username_ && sudo userdel _usename_ -r -f  
+# -f удалять файлы в домашнем каталоге, даже если они не принадлежат пользователю  
+# -r удалить домашний каталог и почтовый ящик  
+
+```
+# Удалить NVM окружение для Nodejs
 ```
 nvm deactivate  
 nvm unlink  
-nvm uninstall <ver>  
+nvm uninstall _ver_  
 ```

@@ -18,18 +18,18 @@ nvm install 18
 source ~/.bashrc
 
 # Установка YARN
-npm install yarn --global
 npm update
+npm install yarn --global
 source ~/.bashrc
 
 # Установка RUBY v3.1.2
 rvm install 3.1.2
 
 # Установка RAILS и других Джемов
-# gem install rails
-# gem install rails -v 6.1.7
-# gem install solargraph
-# gem install rubocop
+gem install rails
+gem install rails -v 6.1.7
+gem install solargraph
+gem install rubocop
 
 # Подготовка нового приложения RAILS APP
 # rails _6.1.7_ new ~/rails/new_webapp6

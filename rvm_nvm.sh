@@ -14,11 +14,12 @@ curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.2/install.sh | bash
 source ~/.nvm/nvm.sh
 
 # Установка Node v18
-nvm install 18
+nvm install 18.12.1
 source ~/.bashrc
 
 # Установка YARN
 npm install yarn --global
+npm update
 source ~/.bashrc
 
 # Установка RUBY v3.1.2

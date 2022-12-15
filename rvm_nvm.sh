@@ -13,7 +13,7 @@ source ~/.rvm/scripts/rvm
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.2/install.sh | bash
 source ~/.nvm/nvm.sh
 
-# Установка Node v16-17 (версия 18 и выше могут быть проблемы)
+# Установка Node v16-17. Node нужен для версии Rails 6 и ниже (c версией Node 18 и выше могут быть проблемы)
 nvm install 16
 source ~/.bashrc
 

@@ -13,12 +13,11 @@ source ~/.rvm/scripts/rvm
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.2/install.sh | bash
 source ~/.nvm/nvm.sh
 
-# Установка Node v18
-nvm install 18
+# Установка Node v16-17 (версия 18 и выше могут быть проблемы)
+nvm install 16
 source ~/.bashrc
 
 # Установка YARN
-npm update
 npm install yarn --global
 source ~/.bashrc
 

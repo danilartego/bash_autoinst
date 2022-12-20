@@ -1,46 +1,53 @@
-# RVM + RUBY / NVM + NODE Autoinstaller
+# Автоматические скрипты для настройки Ubuntu и окружения
 
-Автоматическая установка RVM окружения для языка Ruby (v3.1.2) и установка NVM окружения для Node_v16 + Yarn.  
-Дополнительно ставиться Ruby on Rails v6.1.7 и ~7 версии.  
-Проверен на WSL2, чистой Ubuntu 22.04.  
+### Копируем скрипт из Github
 ```
-# Копируем скрипт из Github.
 git clone https://github.com/danilartego/autoinst.git 
+```
+## Автоматическая установка RVM и NVM
+Окружения для языка Ruby и окружения для Node + Yarn  
+Дополнительно ставиться Ruby on Rails v6.1.7 и ~7 версии  
+Проверен на WSL2 и чистой Ubuntu 22.04  
 
-# Смотрим скрипт, вносим правки, если нужно.
-nano ./autoinst/rvm_nvm.sh   
+```
+bash rvm_nvm.sh
+```
 
-# Запуск скрипта через Bash.
-bash ./autoinst/rvm_nvm.sh
+## Удаление Snap из Ubuntu
+Сервис установки пакетов **Snap** по умолчанию встроен в **Ubuntu**
+```
+bash snap_del.sh
+```
 
-# Перезапустить bash.
-/bin/bash --login
+## Установка сервиса приложений Flatpak
+```
+bash flatpak_inst.sh
 ```
 
 ---
 ### Linux user add & delete
-```
-# Добавить пользовтеля
-adduser _username_ 
 
-# Добавить пользователя в категорию _sudo_
-usermod -aG sudo _usrname_
+Добавить пользовтеля
+`adduser USERNAME`
 
-# Удилить пользователя
-sudo killall -u _username_ && sudo userdel _usename_ -r -f  
-# -f удалять файлы в домашнем каталоге, даже если они не принадлежат пользователю  
-# -r удалить домашний каталог и почтовый ящик  
+Добавить пользователя в категорию sudo
+`usermod -aG sudo USERNAME`
 
-```
-### Удалить NVM окружение для Nodejs
+Удилить пользователя
+`sudo killall -u USERNAME && sudo userdel USERNAME -r -f` 
+- -f удалять файлы в домашнем каталоге, даже если они не принадлежат пользователю  
+- -r удалить домашний каталог и почтовый ящик  
+
+
+### Удалить node
 ```
 nvm deactivate  
 nvm unlink  
-nvm uninstall _ver_  
+nvm uninstall VERSION 
 ```
 
 ### Git прописать почту и имя
 ```
-git config --global user.email _"user@domain.com"_
-git config --global user.name _"username"_
+git config --global user.email "user@domain.com"
+git config --global user.name "username"
 ```

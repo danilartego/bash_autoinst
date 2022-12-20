@@ -21,7 +21,7 @@ source ~/.bashrc
 npm install yarn --global
 source ~/.bashrc
 
-# Установка RUBY v3.1.2
+# Установка RUBY
 rvm install 3.1.2
 
 # Установка RAILS и других Джемов

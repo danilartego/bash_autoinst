@@ -22,7 +22,7 @@ npm install yarn --global
 source ~/.bashrc
 
 # Не создавать документацию при скачивании Gem's
-echo 'gem: --no-document' >> ~/.gemrc
+# echo 'gem: --no-document' >> ~/.gemrc
 
 # Установка RUBY
 rvm install 3.1.2

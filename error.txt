@@ -1,0 +1,8 @@
+ERROR couldn't connect to zsys daemon (Fix the Error)
+sudo apt remove zsys
+
+sudo: unable to resolve host cubic: Name or service not known (Fix the Error)
+su - root
+nano /etc/hosts
+127.0.0.1 localhost
+127.0.0.1 cubic #(add cubic - name pc)

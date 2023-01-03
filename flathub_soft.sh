@@ -1,7 +1,7 @@
 #!/bin/bash
 
 sudo flatpak install app/com.vscodium.codium/x86_64/stable -y
-sudo flatpak install app/com.visualstudio.code/x86_64/stable -y
+# sudo flatpak install app/com.visualstudio.code/x86_64/stable -y
 sudo flatpak install app/org.telegram.desktop/x86_64/stable -y
 sudo flatpak install app/org.gnome.Shotwell/x86_64/stable -y
 sudo flatpak install app/com.xnview.XnViewMP/x86_64/stable -y

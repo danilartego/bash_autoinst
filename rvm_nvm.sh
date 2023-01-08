@@ -21,17 +21,21 @@ source ~/.bashrc
 npm install yarn --global
 source ~/.bashrc
 
-# Не создавать документацию при скачивании Gem's
-# echo 'gem: --no-document' >> ~/.gemrc
-
 # Установка RUBY
-rvm install 3.1.2
+rvm install 3.2.0
 
-# Установка RAILS и других Джемов
-gem install rails
-gem install rails -v 6.1.7
-gem install solargraph
-gem install rubocop
+# Не создавать документацию при установке Gem's
+echo 'gem: --no-document' >> ~/.gemrc
+
+# Установка Gem's
+gem install bundler
+# gem install solargraph
+# gem install rubocop
+
+# Установка RAILS
+# gem install rails
+# gem install rails -v 6.1.7
+
 
 # Подготовка нового приложения RAILS APP
 # rails _6.1.7_ new ~/rails/new_webapp6

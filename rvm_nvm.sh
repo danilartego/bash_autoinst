@@ -22,7 +22,7 @@ npm install yarn --global
 source ~/.bashrc
 
 # Установка RUBY
-rvm install 3.2.0
+rvm install 3.1.3
 
 # Не создавать документацию при установке Gem's
 echo 'gem: --no-document' >> ~/.gemrc
@@ -35,7 +35,6 @@ gem install bundler
 # Установка RAILS
 # gem install rails
 # gem install rails -v 6.1.7
-
 
 # Подготовка нового приложения RAILS APP
 # rails _6.1.7_ new ~/rails/new_webapp6

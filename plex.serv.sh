@@ -6,6 +6,8 @@ echo deb [signed-by=/usr/share/keyrings/plex.gpg] https://downloads.plex.tv/repo
 sudo wget -O- https://downloads.plex.tv/plex-keys/PlexSign.key | gpg --dearmor | sudo tee /usr/share/keyrings/plex.gpg
 sudo apt autoremove -y
 
+sudo apt update -y
+
 sudo apt install plexmediaserver -y
 
 sudo systemctl start plexmediaserver

@@ -39,4 +39,3 @@ psql --user code --password myapp
 
 # Пользователи в базе данных
 \du
-

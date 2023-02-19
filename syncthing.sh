@@ -18,4 +18,3 @@ sudo apt install syncthing
 # Установка программы как сервис
 sudo systemctl start syncthing@$USER
 sudo systemctl enable syncthing@$USER
-

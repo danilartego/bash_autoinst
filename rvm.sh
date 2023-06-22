@@ -2,7 +2,9 @@
 
 # Обновление программ и установка
 sudo apt update && sudo apt upgrade -y
+sudo dnf update && sudo apt upgrade -y
 sudo apt install curl gnupg2 git sqlite3 -y
+sudo dnf install curl gnupg2 git sqlite3 -y
 
 # Установка RVM (окружение для уравление RUBY)
 gpg2 --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3 7D2BAF1CF37B13E2069D6956105BD0E739499BDB
@@ -10,7 +12,7 @@ gpg2 --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3 7D2BAF1CF37B13E2069D69
 source ~/.rvm/scripts/rvm
 
 # Установка RUBY
-rvm install 3.1.3
+rvm install 3.1.4
 
 # Не создавать документацию при установке Gem's
 echo 'gem: --no-document' >> ~/.gemrc

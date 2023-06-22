@@ -58,7 +58,7 @@ git config --global user.email "user@domain.com"
 git config --global user.name "username"
 ```
 ### Добавить отображение Branch в строке Bash  
-Добавить в конец файла .bashrc
+Добавить в конец файла .bashrc строчки
 ```
 parse_git_branch() {
      git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/(\1)/'
